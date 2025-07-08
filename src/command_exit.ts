@@ -1,6 +1,8 @@
 import { exit } from 'node:process';
+import type { State } from "./state.js";
 
-export function commandExit() {
+export function commandExit(state: State) {
+    state.rl.close();
     console.log("Closing the Pokedex... Goodbye!");
     exit(0);
-};
+}
