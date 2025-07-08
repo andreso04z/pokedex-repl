@@ -4,12 +4,13 @@ A command-line Pokédex built in TypeScript. This REPL-based application allows 
 
 ## 🧠 What I’m Learning
 
-This project is part of the [Boot.dev](https://boot.dev) TypeScript backend roadmap. Through this project, I'm learning:
+This project is part of the [Boot.dev](https://boot.dev) TypeScript backend roadmap. Key learning points include:
 
-- How to work with JSON data
-- Making HTTP requests in Node.js
-- Implementing caching to reduce API calls
-- Building a REPL (Read-Eval-Print Loop) app in the terminal
+- Building a robust REPL (Read-Eval-Print Loop) system in TypeScript
+- Implementing command pattern for extensible CLI applications
+- Writing clean, type-safe code with TypeScript
+- Managing application state and command registry
+- Unit testing TypeScript applications
 
 ## 🚀 How to Run
 
