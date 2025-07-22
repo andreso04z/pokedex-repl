@@ -15,8 +15,9 @@ export class PokeAPI {
         }
 
         const cacheEntry = this.cache.get<ShallowLocations>(pageURL);
-        if (cacheEntry && cacheEntry.val) {
-            return cacheEntry.val;
+        if (cacheEntry && cacheEntry) {
+            console.log("From cache");
+            return cacheEntry;
         }
 
         const response = await fetch(pageURL, { method: "GET" });
@@ -33,8 +34,9 @@ export class PokeAPI {
         const pageURL = `https://pokeapi.co/api/v2/location-area/${locationName}`;
 
         const cacheEntry = this.cache.get<Location>(pageURL);
-        if (cacheEntry && cacheEntry.val) {
-            return cacheEntry.val;
+        if (cacheEntry && cacheEntry) {
+            console.log("From cache");
+            return cacheEntry;
         }
 
         const response = await fetch(pageURL, { method: "GET" });
