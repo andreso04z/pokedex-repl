@@ -1,4 +1,5 @@
 import type { ShallowLocations, Location } from "./pokeapi_types";
+import { Cache } from "./pokecache";
 
 export class PokeAPI {
     private static readonly baseURL = "https://pokeapi.co/api/v2";
@@ -10,6 +11,8 @@ export class PokeAPI {
         if (!pageURL) {
             pageURL = `${PokeAPI.baseURL}/location-area`;
         }
+
+        
 
         const response = await fetch(pageURL, { method: "GET" });
 
