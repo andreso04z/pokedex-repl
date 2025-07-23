@@ -12,7 +12,7 @@ export function startREPL() {
         if (command in state.commands) {
             try {
                 const commandStored = state.commands[command];
-                await commandStored.callback(state);
+                await commandStored.callback(state, ...cleanInput(input).slice(1));
             } catch (error) {
                 console.log(`An internal error occurred: ${error}`);
             }

@@ -4,6 +4,7 @@ import { commandHelp } from "./command_help.js";
 import { commandMap } from "./command_map.js";
 import { PokeAPI } from "./pokeapi.js";
 import { commandMapb } from "./command_mapb.js";
+import { commandExplore } from "./command_explore.js";
 
 export type State = {
     rl: Interface;
@@ -16,7 +17,7 @@ export type State = {
 export type CLICommand = {
     name: string;
     description: string;
-    callback: (state: State) => void;
+    callback: (state: State, ...args: string[]) => void;
 };
 
 export function initState(): State {
@@ -46,8 +47,13 @@ export function initState(): State {
             name: "mapb",
             description: "Displays the previous 20 map locations",
             callback: commandMapb
+        },
+        explore: {
+            name: "explore",
+            description: "Displays Pokemon in a specified location",
+            callback: commandExplore
         }
-    }
+    };
 
     return {
         rl: rl,
