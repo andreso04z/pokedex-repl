@@ -14,6 +14,7 @@ This project is part of the [Boot.dev](https://boot.dev) TypeScript backend road
 - Writing clean, type-safe code with TypeScript
 - Managing application state and command registry
 - Unit testing TypeScript applications
+- Implementing a versatile caching system to reduce calls to external API's
 
 ## 🚀 How to Run
 
