@@ -27,4 +27,5 @@ export type PokemonEncounter = {
 export type Pokemon = {
   name: string;
   url: string;
+  base_experience: number;
 };
