@@ -28,4 +28,36 @@ export type Pokemon = {
   name: string;
   url: string;
   base_experience: number;
+  stats: [
+    {
+      base_stat: number;
+      stat: {
+        name: "hp";
+      }
+    },
+    {
+      base_stat: number;
+      stat: {
+        name: "attack";
+      }
+    },
+    {
+      base_stat: number;
+      stat: {
+        name: "defense";
+      }
+    },
+    {
+      base_stat: number;
+      stat: {
+        name: "special-attack";
+      }
+    },
+    {
+      base_stat: number;
+      stat: {
+        name: "special-defense";
+      }
+    }
+  ];
 };
